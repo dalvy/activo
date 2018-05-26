@@ -1,0 +1,36 @@
+*-----------------------------------------------
+* 
+*
+*
+*
+*-----------------------------------------------
+SET BELL OFF
+SET ECHO OFF
+SET SCORE OFF
+SET SAFET OFF
+SET TALK OFF
+SET DELE ON
+clos data
+clear all
+gndigitos=6
+USE Y:\GESTOR\activo\data\cpaf0050 in 0 orde suc_bien alias D50
+USE Y:\GESTOR\activo\data\cpaf0080 in 0 orde cod_dep alias D80
+USE Y:\GESTOR\conta\data\fcon0015 in 0 alias Con
+Sele D80
+Dele for d80.Per_Dep="2011"
+sele D50
+Go top
+Do While not eof()
+   cPer_Dep="2011"
+   if d50.est_act<>"PB" then
+       wait window "Bien :"+D50.Des_Act nowait
+	   Sele D80
+	   Append Blan
+	   Replace d80.Per_Dep with cPer_Dep, D80.Cta_Dep with D50.Cta_Act,D80.Cod_Dep with D50.cod_Act
+	   Replace d80.DepAcu00 with D50.vtd_act, D80.V00_Dep with D50.Vli_Act,D80.D00_Dep with D50.vtd_Act
+    endif
+   Sele D50
+   skip
+Enddo
+Clos Data
+Clear All
