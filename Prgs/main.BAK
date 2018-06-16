@@ -29,7 +29,7 @@ ON ERROR DO AdmError
 
 *: Variables Públicas
 PUBLIC cEps, cDivision, cTituloBarra, cUsuario, cVersion, cCodUsuario, cRutaHome, cPassword, cRuc, cMetDep, cMetAut, gcCodUsuario,;
-       glCrypto, gcCadChrOneVF6, gcCadChrTwoVF6, glIncluirTrabajadorEnCodBarras
+       glCrypto, gcCadChrOneVF6, gcCadChrTwoVF6, glIncluirTrabajadorEnCodBarras, glClasRegul
 STORE "" TO cEps, cDivision, cTituloBarra, cUsuario, cVersion, cCodUsuario, cRutaHome, cPerPro
 
 gcOldDir      = FULLPATH(CURDIR())
