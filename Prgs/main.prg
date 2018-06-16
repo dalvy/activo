@@ -55,14 +55,14 @@ else
 	glCrypto = .T.
 endif
 
-cRucSedacusco = "20136353315"  && Sedacusco (Cusco)
+cRuc = "20136353315"  && Sedacusco (Cusco)
 cRucEpsasa = "20143079075"  && Epsasa (Ayacucho)
 cRucJaen = "20141814312"  && Eps marañon (Jaen)
 cRucEmapacopsa = "20128985841" && Eps Emapacopsa (Pucallpa)
 cRucBagua = "20105087978"  && Bagua
 cRucEpssumu = "20171727783"  && Epssumu Eps Bagua Grande Epssumu
 cRucHuacho = "20158820260"  && Huacho Eps Huacho
-cRuc = "20115851919"  && ICA Eps Ilo
+cRucILO = "20115851919"  && ICA Eps Ilo
 
 glIncluirTrabajadorEnCodBarras = IIF(cRuc = "20115851919",.T.,.F.)
 USE
