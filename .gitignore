@@ -1,3 +1,16 @@
 
 *.exe
 *.exe
+PjtActivos.PJT
+PjtActivos.PJX
+DATAx/x.IDX
+*.dbf
+*.IDX
+*.bak
+*.tmp
+*.dbc
+*.dbt
+*.cdx
+*.rar
+*.exe
+*.DBF
